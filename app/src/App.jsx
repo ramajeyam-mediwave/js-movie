@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
+import Card from "./Components/card";
 import Input from "./Components/input";
 import Button from "./Components/Button";
-import Card from "./Components/card";
 
 function App() {
   const [titles, setTitles] = useState([]);
@@ -14,6 +14,7 @@ function App() {
     });
     setTitle("");
   };
+
   useEffect(() => {
     console.log(titles);
   }, [titles]);
@@ -36,9 +37,8 @@ function App() {
 
       {titles.map((item) => {
         return (
-          <div>
+          <div key={item}>
             <Card values={item} />
-            
           </div>
         );
       })}
