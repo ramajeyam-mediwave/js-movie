@@ -1,13 +1,10 @@
-import React from 'react';
-const  Card = ({values}) => {
-    return(
-    <div>
-      <h3>{values.title}</h3>
-      <p>Description: {values.description}</p>
-      <p>Ratings: {values.ratings}</p>
-      <img src={values.url} alt="Image" />
-    </div>)
-
-}
+const Card = ({ values }) => {
+    return (
+      <div className="card">
+        <h2 id={values.id}> {values.title}</h2>
+        
+      </div>
+    );
+  };
 
 export default Card;
