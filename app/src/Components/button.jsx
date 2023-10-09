@@ -1,6 +1,7 @@
+
 import React from 'react';
 
-function Button({ name, type,  }) {
+function Button({ name, type}) {
   return (
     <div>
       <button type={type} >
@@ -9,4 +10,5 @@ function Button({ name, type,  }) {
     </div>
   );
 }
+
 export default Button;
